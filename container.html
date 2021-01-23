@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container:hover {
+            box-shadow: 1px 1px 0px 1px #008080,
+            2px 2px 0px 1px #008080,
+            3px 3px 0px 1px #008080,
+            4px 4px 0px 1px #008080,
+            5px 5px 0px 1px #008080,
+            6px 6px 0px 1px #008080,
+            7px 7px 0px 1px #008080;
+            transform: translate(-7px, -7px)
+
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 300px;
+            height: 500px;
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
+            transition: all ease-in .15s;
+        }
+        .header {
+            flex-basis: 100%;
+            background-color: cadetblue;
+        }
+        .footer {
+            flex-basis: 20%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            SOME TEXT
+        </div>
+        <div class="footer">
+            <div class="info">ENTER</div>
+            <div class="info">LEAVE</div>
+        </div>
+    </div>
+</body>
+</html>
